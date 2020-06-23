@@ -6,6 +6,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { NavComponent } from './components/nav/nav.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { TextModule } from '../text/text.module';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -16,7 +17,8 @@ import { TextModule } from '../text/text.module';
     CommonModule,
     UiModule,
     IconModule,
-    TextModule
+    TextModule,
+    RouterModule
   ]
 })
 export class CoreModule { }
