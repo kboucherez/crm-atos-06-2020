@@ -5,16 +5,18 @@ import { IconModule } from '../icon/icon.module';
 import { HeaderComponent } from './components/header/header.component';
 import { NavComponent } from './components/nav/nav.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { TextModule } from '../text/text.module';
 
 
 
 @NgModule({
   declarations: [HeaderComponent, NavComponent, FooterComponent],
-  exports: [UiModule, IconModule, HeaderComponent, NavComponent, FooterComponent],
+  exports: [UiModule, IconModule, TextModule, HeaderComponent, NavComponent, FooterComponent],
   imports: [
     CommonModule,
     UiModule,
-    IconModule
+    IconModule,
+    TextModule
   ]
 })
 export class CoreModule { }
