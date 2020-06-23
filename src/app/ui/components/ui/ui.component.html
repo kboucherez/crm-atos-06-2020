@@ -1,12 +1,12 @@
 <header class="fixed-top">
 
-  <span *ngIf="!open" (click)="toggle()">
-    <ng-content select=".icon-nav"></ng-content>
+  <span (click)="toggle()">
+    <ng-content *ngIf="!open; else close;" select=".icon-nav"></ng-content>
+    <ng-template #close>
+      <ng-content select=".icon-close"></ng-content>
+    </ng-template>
   </span>
 
-  <span *ngIf="open" (click)="toggle()">
-    <ng-content select=".icon-close"></ng-content>
-  </span>
 
   <ng-content select=".header"></ng-content>
 </header>
