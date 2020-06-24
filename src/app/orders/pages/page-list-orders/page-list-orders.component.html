@@ -1,1 +1,9 @@
-<p>page-list-orders works!</p>
+<app-template-one-col>
+  <app-text class="title" [colorLight]="true">
+    <h1>Orders</h1>
+  </app-text>
+  <div class="content">
+    <app-table-light *ngIf="collection" [headers]="listHeaders" [collection]="collection"></app-table-light>
+    <app-button route="add" label="Add an order"></app-button>
+  </div>
+</app-template-one-col>
