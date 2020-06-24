@@ -8,6 +8,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { TextModule } from '../text/text.module';
 import { RouterModule } from '@angular/router';
 import { LoginModule } from '../login/login.module';
+import { LibraryModule } from '../library/library.module';
 
 
 
@@ -20,7 +21,8 @@ import { LoginModule } from '../login/login.module';
     IconModule,
     TextModule,
     RouterModule,
-    LoginModule
+    LoginModule,
+    LibraryModule
   ]
 })
 export class CoreModule { }
