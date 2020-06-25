@@ -1,12 +1,12 @@
 @import 'theme';
 .my-table-light {
-  .state-canceled {
+  .state-canceled, .state-inactive {
     background: $color-error;
   }
   .state-option {
     background: $color-warning;
   }
-  .state-confirmed {
+  .state-confirmed, .state-active {
     background: $color-success;
   }
 }

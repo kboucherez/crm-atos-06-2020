@@ -91,7 +91,7 @@
       "comment": "un comment pour client christophe2"
     },
     {
-      "state": "INACTIVE",
+      "state": "ACTIVE",
       "tva": 20,
       "id": 2,
       "name": "Modis",
