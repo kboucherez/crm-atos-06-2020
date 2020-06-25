@@ -5,6 +5,7 @@ import { OrdersRoutingModule } from './orders-routing.module';
 import { TemplatesModule } from '../templates/templates.module';
 import { TextModule } from '../text/text.module';
 import { LibraryModule } from '../library/library.module';
+import { SharedModule } from '../shared/shared.module';
 
 
 
@@ -15,7 +16,8 @@ import { LibraryModule } from '../library/library.module';
     OrdersRoutingModule,
     TemplatesModule,
     TextModule,
-    LibraryModule
+    LibraryModule,
+    SharedModule
   ]
 })
 export class OrdersModule { }
