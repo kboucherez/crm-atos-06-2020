@@ -3,13 +3,19 @@ import { Observable, throwError } from 'rxjs';
 import { catchError } from 'rxjs/operators';
 import { Order } from 'src/app/shared/models/order';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
+import { environment } from 'src/environments/environment';
+import { SubjectSubscriber } from 'rxjs/internal/Subject';
 @Injectable({
   providedIn: 'root'
 })
 export class OrdersService {
+  public testObservable = new Observable((sujets) => {
+    sujets.next([{name: 'Johan', age: 28}, {name: 'Kevin', age: 32}, {name: 'Pierre', age: 31}]);
+  });
+  private urlApi = environment.urlApi;
   private pCollection: Observable<Order[]>;
   constructor(private http: HttpClient) {
-    this.collection = this.http.get<Order[]>('http://localhost:3000/orders').pipe(
+    this.collection = this.http.get<Order[]>(`${this.urlApi}/orders`).pipe(
       catchError(this.handleError)
     );
   }
