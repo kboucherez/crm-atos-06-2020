@@ -4,7 +4,8 @@
     <!-- <p>{{ collection | json }}</p> -->
   </app-text>
   <div class="content">
-    <app-table-light *ngIf="collection$ | async as collection" [headers]="listHeaders">
+   <app-table-light *ngIf="collection$ | async as collection" [headers]="listHeaders">
+ <!-- <app-table-dark *ngIf="collection$ | async as collection" [headers]="listHeaders"> -->
       <tr *ngFor="let item of collection">
         <td>{{ item.typePresta }}</td>
         <td>{{ item.client }}</td>
@@ -21,7 +22,8 @@
           </select>
         </td>
       </tr>
-    </app-table-light>
+ <!--  </app-table-dark> -->
+     </app-table-light>
     <app-button route="add" label="Add an order"></app-button>
   </div>
 </app-template-one-col>

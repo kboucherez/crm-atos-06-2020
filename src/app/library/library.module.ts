@@ -4,15 +4,16 @@ import { VerticalNavComponent } from './components/vertical-nav/vertical-nav.com
 import { RouterModule } from '@angular/router';
 import { TableLightComponent } from './components/table-light/table-light.component';
 import { ButtonComponent } from './components/button/button.component';
+import { TableDarkComponent } from './components/table-dark/table-dark.component';
 
 
 
 @NgModule({
-  declarations: [VerticalNavComponent, TableLightComponent, ButtonComponent],
+  declarations: [VerticalNavComponent, TableLightComponent, ButtonComponent, TableDarkComponent],
   imports: [
     CommonModule,
     RouterModule
   ],
-  exports: [VerticalNavComponent, TableLightComponent, ButtonComponent]
+  exports: [VerticalNavComponent, TableLightComponent, ButtonComponent, TableDarkComponent]
 })
 export class LibraryModule { }
