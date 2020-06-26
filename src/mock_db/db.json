@@ -16,7 +16,7 @@
       "tva": 20,
       "state": "OPTION",
       "typePresta": "Coaching",
-      "client": "Atos",
+      "client": "Atosss",
       "comment": "Comment pour Atos",
       "id": 4
     },
@@ -32,7 +32,7 @@
     },
     {
       "tjmHt": 600,
-      "nbJours": 2,
+      "nbJours": 5,
       "tva": 20,
       "state": "CANCELED",
       "typePresta": "Coaching",

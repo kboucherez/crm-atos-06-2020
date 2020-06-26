@@ -3,6 +3,8 @@ import { OrdersService } from '../../services/orders.service';
 import { Order } from 'src/app/shared/models/order';
 import { Subscription, Observable } from 'rxjs';
 import { StateOrder } from 'src/app/shared/enums/state-order.enum';
+import { faThumbsDown } from '@fortawesome/free-solid-svg-icons';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-page-list-orders',
   templateUrl: './page-list-orders.component.html',
@@ -14,13 +16,14 @@ export class PageListOrdersComponent implements OnInit, OnDestroy {
   // public collection: Order[];
   public collection$: Observable<Order[]>;
   private sub: Subscription;
-  constructor(private os: OrdersService) { }
+  constructor(private os: OrdersService, private router: Router) { }
   ngOnInit(): void {
     this.collection$ = this.os.collection;
     // this.os.collection.subscribe((col) => {
     //   this.collection = col;
     // });
     this.listHeaders = [
+      'Action',
       'Type',
       'Client',
       'Nb Jours',
@@ -40,6 +43,10 @@ export class PageListOrdersComponent implements OnInit, OnDestroy {
       // res etant la reponse de l'api, traiter les codes d'erreur
       item.state = res.state;
     });
+  }
+
+  public edit(item: Order): void {
+    this.router.navigate(['orders', 'edit', item.id]);
   }
 
   ngOnDestroy() {
