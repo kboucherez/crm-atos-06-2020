@@ -39,6 +39,9 @@ export class OrdersService {
     return this.http.put<Order>(`${this.urlApi}/orders/${item.id}`, item);
   }
   // add item in collection
+  public add(item: Order): Observable<Order> {
+    return this.http.post<Order>(`${this.urlApi}/orders`, item);
+  }
   // delete item in collection
   // get item by id in collection
   // gestion http errors

@@ -39,6 +39,9 @@ export class ClientsService {
     return this.http.put<Client>(`${this.urlApi}/clients/${item.id}`, item);
   }
   // add item in collection
+  public add(item: Client): Observable<Client> {
+    return this.http.post<Client>(`${this.urlApi}/clients`, item);
+  }
   // delete item in collection
   // get item by id in collection
   // gestion http errors

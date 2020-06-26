@@ -4,7 +4,7 @@
       "tjmHt": 500,
       "nbJours": 1,
       "tva": 20,
-      "state": "OPTION",
+      "state": "CONFIRMED",
       "typePresta": "Formation",
       "client": "nemesys",
       "comment": "fssdgh",
@@ -14,7 +14,7 @@
       "tjmHt": 700,
       "nbJours": 5,
       "tva": 20,
-      "state": "CANCELED",
+      "state": "OPTION",
       "typePresta": "Coaching",
       "client": "Atos",
       "comment": "Comment pour Atos",
@@ -24,7 +24,7 @@
       "tjmHt": 600,
       "nbJours": 1,
       "tva": 20,
-      "state": "OPTION",
+      "state": "CONFIRMED",
       "typePresta": "Coaching",
       "client": "Modis",
       "comment": "test",
@@ -34,7 +34,7 @@
       "tjmHt": 600,
       "nbJours": 2,
       "tva": 20,
-      "state": "OPTION",
+      "state": "CANCELED",
       "typePresta": "Coaching",
       "client": "Capgemini",
       "comment": "merci cap",
@@ -79,11 +79,31 @@
       "client": "Atos",
       "comment": "kjhsdkgf",
       "id": 10
+    },
+    {
+      "tjmHt": 1200,
+      "nbJours": 3,
+      "tva": 20,
+      "state": "OPTION",
+      "typePresta": "coaching",
+      "client": "atos",
+      "comment": "testKBZ",
+      "id": 11
+    },
+    {
+      "tjmHt": 1200,
+      "nbJours": 6,
+      "tva": 20,
+      "state": "CANCELED",
+      "typePresta": "coaching",
+      "client": "supralog",
+      "comment": null,
+      "id": 12
     }
   ],
   "clients": [
     {
-      "state": "ACTIVE",
+      "state": "INACTIVE",
       "tva": 20,
       "id": 1,
       "name": "Christophe2",
@@ -97,6 +117,14 @@
       "name": "Modis",
       "ca": 120000,
       "comment": "un comment pour client modis"
+    },
+    {
+      "name": "magicKev",
+      "ca": 2,
+      "tva": 20,
+      "state": "INACTIVE",
+      "comment": "come on",
+      "id": 3
     }
   ]
 }
